@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            
+        }
+       
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .role-links {
+            margin: 20px;
+        }
+        .role-links a {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .role-links a:hover {
+            background-color: #45a049;
+        }
+        
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        text-align: center; 
+
+    }
+
+    .logo {
+        width: 190px; 
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 40px;
+        color: crimson;
+        margin-bottom: 10px; 
+        text-align: center;
+    }
+
+    .text-content h3 {
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+    }
+
+    .container-course {
+      width: 50%;
+      margin: auto;
+        background-color: rgba(252, 235, 8, 0.458);
+        border: 2px solid black;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+   
+
+    h2 {
+        text-align: center;
+        margin-top: 26px;
+        margin-bottom: 2px;
+        font-size: 30px;
+    }
+
+    select {
+        width: 200px;
+        padding: 10px;
+        font-size: 18px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .btn {
+        padding: 10px 21px;
+        font-size: 18px;
+        margin: 20px auto;
+        background-color: rgba(47, 242, 138, 0.572);
+        cursor: pointer;
+        transition: 0.2s;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        border: none;
+    }
+
+    .btn:hover {
+        opacity: 0.8;
+    }
+</style>
+<script>
+    function redirectToPage() {
+        const semesterNumber = document.getElementById('sem').value;
+        if (semesterNumber) {
+            if (semesterNumber === "CSE-SEM-01") {
+                window.location.href = "register1.html";
+            } else if (semesterNumber === "CSE-SEM-02") {
+                window.location.href = "register2.html";
+            } else if (semesterNumber === "CSE-SEM-03") {
+                window.location.href = "register3.html";
+            } else if (semesterNumber === "CSE-SEM-04") {
+                window.location.href = "register4.html";
+            } else if (semesterNumber === "CSE-SEM-05") {
+                window.location.href = "register5.html";
+            } else if (semesterNumber === "CSE-SEM-06") {
+                window.location.href = "register6.html";
+            } else if (semesterNumber === "CSE-SEM-07") {
+                window.location.href = "register7.html";
+            } else if (semesterNumber === "CSE-SEM-08") {
+                window.location.href = "register8.html";
+            }
+        } else {
+            alert("Please select a semester number.");
+        }
+    }
+</script>
+    
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Registration Portal</h1>
+</header>
+
+<div class="content">
+    <div class="text-content">
+        <h1>Nagarjuna College of Engineering and Technology</h1>
+        <h3>NBA &amp; NAAC Accredited with “A+” grade<br>
+            (An Autonomous College under VTU, Belagavi)
+        </h3>
+    </div> 
+</div>
+<div class="container-course">
+    <h2>OPTING SEMESTER</h2>
+    <select id="sem">
+        <option value="">Semester</option>
+        <option value="CSE-SEM-01">1</option>
+        <option value="CSE-SEM-02">2</option>
+        <option value="CSE-SEM-03">3</option>
+        <option value="CSE-SEM-04">4</option>
+        <option value="CSE-SEM-05">5</option>
+        <option value="CSE-SEM-06">6</option>
+        <option value="CSE-SEM-07">7</option>
+        <option value="CSE-SEM-08">8</option>
+    </select>
+    <button class="btn" onclick="redirectToPage()">Submit</button>
+</div>
+    
+
+    
+
+
+
+</body>
+</html>
